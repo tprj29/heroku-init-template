@@ -11,37 +11,63 @@
       "required": true,
       "value": "staging"
     },
-    "APP_KEY": {},
+    "APP_KEY": {
+      "required": false
+    },
     "APP_LOG": {
       "required": true,
       "value": "errorlog"
     },
-    "APP_URL": {},
-    "CLOUDAMQP_URL": {},
-    "COMPOSER_GITHUB_OAUTH_TOKEN": {},
+    "APP_URL": {
+      "required": false
+    },
+    "CLOUDAMQP_URL": {
+      "required": false
+    },
+    "COMPOSER_GITHUB_OAUTH_TOKEN": {
+      "required": false
+    },
     "DB_CONNECTION": {
       "required": true,
       "value": "shared"
     },
-    "DB_DATABASE": {},
-    "DB_HOST": {},
-    "DB_PASSWORD": {},
+    "DB_DATABASE": {
+      "required": false
+    },
+    "DB_HOST": {
+      "required": false
+    },
+    "DB_PASSWORD": {
+      "required": false
+    },
     "DB_PORT": {
       "required": true,
       "value": "5432"
     },
-    "DB_USERNAME": {},
-    "GIFT_AID_API_PASSWORD": {},
-    "GIFT_AID_API_USERNAME": {},
+    "DB_USERNAME": {
+      "required": false
+    },
+    "GIFT_AID_API_PASSWORD": {
+      "required": false
+    },
+    "GIFT_AID_API_USERNAME": {
+      "required": false
+    },
     "GIFT_AID_PRODUCT_NAME": {
       "value": "GiftAid for PaymentHub"
     },
     "GIFT_AID_PRODUCT_VERSION": {
       "value": "1.0"
     },
-    "GIFT_AID_TEST_API_PASSWORD": {},
-    "GIFT_AID_TEST_API_USERNAME": {},
-    "GIFT_AID_VENDOR_ID": {},
+    "GIFT_AID_TEST_API_PASSWORD": {
+      "required": false
+    },
+    "GIFT_AID_TEST_API_USERNAME": {
+      "required": false
+    },
+    "GIFT_AID_VENDOR_ID": {
+      "required": false
+    },
     "LOG_DRIVER": {
       "required": true,
       "value": "errorlog"
@@ -62,15 +88,25 @@
       "required": true,
       "value": "mg.findock.com"
     },
-    "MAILGUN_PUBLIC_KEY": {},
-    "MAILGUN_SECRET": {},
-    "PAPERTRAIL_API_TOKEN": {},
+    "MAILGUN_PUBLIC_KEY": {
+      "required": false
+    },
+    "MAILGUN_SECRET": {
+      "required": false
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": false
+    },
     "QUEUE_DRIVER": {
       "required": true,
       "value": "rabbitmq"
     },
-    "RABBITMQ_HOST": {},
-    "RABBITMQ_PASSWORD": {},
+    "RABBITMQ_HOST": {
+      "required": false
+    },
+    "RABBITMQ_PASSWORD": {
+      "required": false
+    },
     "RABBITMQ_PORT": {
       "required": true,
       "value": "5672"
@@ -79,21 +115,37 @@
       "required": true,
       "value": "processinghub"
     },
-    "RABBITMQ_USER": {},
-    "RABBITMQ_VHOST": {},
+    "RABBITMQ_USER": {
+      "required": false
+    },
+    "RABBITMQ_VHOST": {
+      "required": false
+    },
     "RABBITMQ_QUEUE_DURABLE": {
       "value": "true"
     },
-    "SALESFORCE_API_DOMAIN": {},
-    "SALESFORCE_OAUTH_CALLBACK_URL": {},
-    "SALESFORCE_OAUTH_CONSUMER_SECRET": {},
-    "SALESFORCE_OAUTH_CONSUMER_TOKEN": {},
-    "SALESFORCE_OAUTH_DOMAIN": {},
+    "SALESFORCE_API_DOMAIN": {
+      "required": false
+    },
+    "SALESFORCE_OAUTH_CALLBACK_URL": {
+      "required": false
+    },
+    "SALESFORCE_OAUTH_CONSUMER_SECRET": {
+      "required": false
+    },
+    "SALESFORCE_OAUTH_CONSUMER_TOKEN": {
+      "required": false
+    },
+    "SALESFORCE_OAUTH_DOMAIN": {
+      "required": false
+    },
     "SHARED_CONNECTION": {
       "required": true,
       "value": "shared"
     },
-    "STORAGE_DISK": {},
+    "STORAGE_DISK": {
+      "required": false
+    },
     "TENANT_CONNECTION": {
       "required": true,
       "value": "tenant"
