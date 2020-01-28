@@ -1,0 +1,173 @@
+{
+  "scripts": {
+    "postdeploy": "php artisan migrate --force --seed"
+  },
+  "env": {
+    "APP_DEBUG": {
+      "required": true,
+      "value": "false"
+    },
+    "APP_ENV": {
+      "required": true,
+      "value": "staging"
+    },
+    "APP_KEY": {
+      "required": true
+    },
+    "APP_LOG": {
+      "required": true,
+      "value": "errorlog"
+    },
+    "APP_URL": {
+      "required": true
+    },
+    "CLOUDAMQP_URL": {
+      "required": true
+    },
+    "COMPOSER_GITHUB_OAUTH_TOKEN": {
+      "required": true
+    },
+    "DB_CONNECTION": {
+      "required": true,
+      "value": "shared"
+    },
+    "DB_DATABASE": {
+      "required": true
+    },
+    "DB_HOST": {
+      "required": true
+    },
+    "DB_PASSWORD": {
+      "required": true
+    },
+    "DB_PORT": {
+      "required": true,
+      "value": "5432"
+    },
+    "DB_USERNAME": {
+      "required": true
+    },
+    "GIFT_AID_API_PASSWORD": {},
+    "GIFT_AID_API_USERNAME": {},
+    "GIFT_AID_PRODUCT_NAME": {
+      "value": "GiftAid for PaymentHub"
+    },
+    "GIFT_AID_PRODUCT_VERSION": {
+      "value": "1.0"
+    },
+    "GIFT_AID_TEST_API_PASSWORD": {},
+    "GIFT_AID_TEST_API_USERNAME": {},
+    "GIFT_AID_VENDOR_ID": {},
+    "LOG_DRIVER": {
+      "required": true,
+      "value": "errorlog"
+    },
+    "MAIL_DRIVER": {
+      "required": true,
+      "value": "mailgun"
+    },
+    "MAIL_FROM_ADDRESS": {
+      "required": true,
+      "value": "support@findock.com"
+    },
+    "MAIL_FROM_NAME": {
+      "required": true,
+      "value": "FinDock Support"
+    },
+    "MAILGUN_DOMAIN": {
+      "required": true,
+      "value": "mg.findock.com"
+    },
+    "MAILGUN_PUBLIC_KEY": {
+      "required": true
+    },
+    "MAILGUN_SECRET": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    },
+    "QUEUE_DRIVER": {
+      "required": true,
+      "value": "rabbitmq"
+    },
+    "RABBITMQ_HOST": {
+      "required": true
+    },
+    "RABBITMQ_PASSWORD": {
+      "required": true
+    },
+    "RABBITMQ_PORT": {
+      "required": true,
+      "value": "5672"
+    },
+    "RABBITMQ_QUEUE": {
+      "required": true,
+      "value": "processinghub"
+    },
+    "RABBITMQ_USER": {
+      "required": true
+    },
+    "RABBITMQ_VHOST": {
+      "required": true
+    },
+    "RABBITMQ_QUEUE_DURABLE": {
+      "value": "true"
+    },
+    "SALESFORCE_API_DOMAIN": {
+      "required": true
+    },
+    "SALESFORCE_OAUTH_CALLBACK_URL": {
+      "required": true
+    },
+    "SALESFORCE_OAUTH_CONSUMER_SECRET": {
+      "required": true
+    },
+    "SALESFORCE_OAUTH_CONSUMER_TOKEN": {
+      "required": true
+    },
+    "SALESFORCE_OAUTH_DOMAIN": {
+      "required": true
+    },
+    "SHARED_CONNECTION": {
+      "required": true,
+      "value": "shared"
+    },
+    "STORAGE_DISK": {
+      "required": true
+    },
+    "TENANT_CONNECTION": {
+      "required": true,
+      "value": "tenant"
+    },
+    "USE_QUEUE": {
+      "value": "processinghub"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    },
+    "clock": {
+      "quantity": 1,
+      "size": "Standard-1X"
+    },
+    "worker": {
+      "quantity": 4,
+      "size": "Standard-1X"
+    }
+  },
+  "addons": [
+    "cloudamqp",
+    "papertrail",
+    {
+      "plan": "heroku-postgresql:standard-2"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
