@@ -11,50 +11,26 @@
       "required": true,
       "value": "staging"
     },
-    "APP_KEY": {
-      "required": true,
-      "value": ""
-    },
+    "APP_KEY": {},
     "APP_LOG": {
       "required": true,
       "value": "errorlog"
     },
-    "APP_URL": {
-      "required": true,
-      "value": ""
-    },
-    "CLOUDAMQP_URL": {
-      "required": true,
-      "value": ""
-    },
-    "COMPOSER_GITHUB_OAUTH_TOKEN": {
-      "required": true,
-      "value": ""
-    },
+    "APP_URL": {},
+    "CLOUDAMQP_URL": {},
+    "COMPOSER_GITHUB_OAUTH_TOKEN": {},
     "DB_CONNECTION": {
       "required": true,
       "value": "shared"
     },
-    "DB_DATABASE": {
-      "required": true,
-      "value": ""
-    },
-    "DB_HOST": {
-      "required": true,
-      "value": ""
-    },
-    "DB_PASSWORD": {
-      "required": true,
-      "value": ""
-    },
+    "DB_DATABASE": {},
+    "DB_HOST": {},
+    "DB_PASSWORD": {},
     "DB_PORT": {
       "required": true,
       "value": "5432"
     },
-    "DB_USERNAME": {
-      "required": true,
-      "value": ""
-    },
+    "DB_USERNAME": {},
     "GIFT_AID_API_PASSWORD": {},
     "GIFT_AID_API_USERNAME": {},
     "GIFT_AID_PRODUCT_NAME": {
@@ -86,30 +62,15 @@
       "required": true,
       "value": "mg.findock.com"
     },
-    "MAILGUN_PUBLIC_KEY": {
-      "required": true,
-      "value": ""
-    },
-    "MAILGUN_SECRET": {
-      "required": true,
-      "value": ""
-    },
-    "PAPERTRAIL_API_TOKEN": {
-      "required": true,
-      "value": ""
-    },
+    "MAILGUN_PUBLIC_KEY": {},
+    "MAILGUN_SECRET": {},
+    "PAPERTRAIL_API_TOKEN": {},
     "QUEUE_DRIVER": {
       "required": true,
       "value": "rabbitmq"
     },
-    "RABBITMQ_HOST": {
-      "required": true,
-      "value": ""
-    },
-    "RABBITMQ_PASSWORD": {
-      "required": true,
-      "value": ""
-    },
+    "RABBITMQ_HOST": {},
+    "RABBITMQ_PASSWORD": {},
     "RABBITMQ_PORT": {
       "required": true,
       "value": "5672"
@@ -118,45 +79,21 @@
       "required": true,
       "value": "processinghub"
     },
-    "RABBITMQ_USER": {
-      "required": true,
-      "value": ""
-    },
-    "RABBITMQ_VHOST": {
-      "required": true,
-      "value": ""
-    },
+    "RABBITMQ_USER": {},
+    "RABBITMQ_VHOST": {},
     "RABBITMQ_QUEUE_DURABLE": {
       "value": "true"
     },
-    "SALESFORCE_API_DOMAIN": {
-      "required": true,
-      "value": ""
-    },
-    "SALESFORCE_OAUTH_CALLBACK_URL": {
-      "required": true,
-      "value": ""
-    },
-    "SALESFORCE_OAUTH_CONSUMER_SECRET": {
-      "required": true,
-      "value": ""
-    },
-    "SALESFORCE_OAUTH_CONSUMER_TOKEN": {
-      "required": true,
-      "value": ""
-    },
-    "SALESFORCE_OAUTH_DOMAIN": {
-      "required": true,
-      "value": ""
-    },
+    "SALESFORCE_API_DOMAIN": {},
+    "SALESFORCE_OAUTH_CALLBACK_URL": {},
+    "SALESFORCE_OAUTH_CONSUMER_SECRET": {},
+    "SALESFORCE_OAUTH_CONSUMER_TOKEN": {},
+    "SALESFORCE_OAUTH_DOMAIN": {},
     "SHARED_CONNECTION": {
       "required": true,
       "value": "shared"
     },
-    "STORAGE_DISK": {
-      "required": true,
-      "value": ""
-    },
+    "STORAGE_DISK": {},
     "TENANT_CONNECTION": {
       "required": true,
       "value": "tenant"
